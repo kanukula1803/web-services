@@ -1,0 +1,31 @@
+
+<div style="text-align:center" id="search">
+  <h1>
+    Welcome!
+  </h1>
+</div>
+
+<!-- Auto Complete Search box-->
+<div style="text-align:center" class="search auto-complete">
+  <!--<input matInput type="text" placeholder="Search here" [(ngModel)]="value">-->
+  <!-- <input ngx-google-places-autocomplete [options]='options' #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)" /> -->
+  <input ngx-google-places-autocomplete [options]='options' #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)"/>
+
+  <p><a href="#pricing" (click)="pricing()" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" >Search</a></p>
+
+  
+</div>
+<!-- Currency conversion code-->
+
+<!-- <div style="text-align:center">
+  <mat-form-field>
+    <mat-select [(value)]="selected" (selectionChange)="geoLocation()" placeholder=" Select currency">
+      <mat-option>None</mat-option>
+      <mat-option value="USD"> USD </mat-option>
+      <mat-option value="INR"> INR </mat-option>
+      <mat-option value="EUR"> EUR </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+</div> -->
+
